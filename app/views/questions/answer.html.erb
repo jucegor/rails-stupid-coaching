@@ -1,0 +1,19 @@
+<% @form_answer = params[:question]  %>
+
+<div class="card text-white bg-dark mb-3 d-flex justify-content-center" style="max-width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Question</h5>
+    <p class="card-text"><%= @form_answer %><br>-Julio </p>
+  </div>
+</div>
+
+<br>
+
+<div class="card text-white bg-info mb-3 d-flex justify-content-center" style="max-width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Answer</h5>
+    <p class="card-text"><%= @answer %><br>-Coach </p>
+  </div>
+</div>
+
+<div class="badge badge-warning"><%= link_to "Ask a new question.", ask_path %></div>
